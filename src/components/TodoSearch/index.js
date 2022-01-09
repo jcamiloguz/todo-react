@@ -3,7 +3,7 @@ import './index.css'
 function TodoSearch() {
     return (
         <div className='search__container'>
-            <input className='search'type="text" />
+            <input className='search'type="text" placeholder='Search a Todo ' />
         </div>
     )
 }

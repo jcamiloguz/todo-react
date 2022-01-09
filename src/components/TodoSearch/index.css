@@ -15,3 +15,6 @@
 .search:focus {
   outline: 1px solid #2754aa;
 }
+.search::placeholder {
+  color: #ccc;
+}
