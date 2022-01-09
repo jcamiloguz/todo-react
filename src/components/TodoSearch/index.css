@@ -1,0 +1,17 @@
+.search__container {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+}
+.search {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+}
+.search:focus {
+  outline: 1px solid #2754aa;
+}

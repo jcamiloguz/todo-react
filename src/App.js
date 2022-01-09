@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react'
+import { Header } from './components/Header'
+import {TodoSearch} from './components/TodoSearch'
+import {CreateTodoButton} from './components/CreateTodoButton'
 
-function App() {
+// eslint-disable-next-line
+const todos = [{ text: 'Cortar Cebella', completed: false },
+  { text: 'Curso Reac"', completed: true },
+  { text: 'Hacer almuerzo', completed: false }]
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    {<TodoSearch/>}
+    {/* <TodoList> */}
+      {/* <TodoItem/> */}
+    {/* </TodoList> */}
+    <CreateTodoButton/>
+    </>
+  )
 }
 
-export default App;
+export default App
