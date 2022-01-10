@@ -1,16 +1,16 @@
 import React from 'react'
 import './index.css'
 
-function TodoList({children}) {
-    return (
-    <section>
-        <ul className='todoList'>
-            {
+function TodoList ({ children }) {
+  return (
+      <section>
+          <ul className='todoList'>
+              {
                 children
             }
-        </ul>
-    </section>
-    )
+          </ul>
+      </section>
+  )
 }
 
-export {TodoList}
+export { TodoList }
